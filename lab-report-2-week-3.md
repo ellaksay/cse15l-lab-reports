@@ -75,7 +75,7 @@ The original code for the reverseInPlace method:
 
 The failure inducing test for the reverseInPlace method:
 
-![reverseInPlaceTest](reverseInPlacetest.png)
+![reverseInPlaceTest](reverseInPlaceTest.png)
 
 *The reason why this test broke the original code is because the code did not iterate through the entire array. It would get halfway through and then the values that were originally at the beginning would be at the end again. A big issue causing this is that the i value is set to arr.length.*
 
@@ -107,7 +107,7 @@ Filter output:
 
 ![filterOutput](filterOutput.png)
 
-*The output of this test did the symptoms that we predicted which was that it would run an infinite loop because the 0th index would be the only one that ever got "added" to*
+*The output of this test did the symptoms that we predicted which was that it would return the incorrect order of values in the output list because because the 0th index would be the only one that ever got "added" to. The list would end up being backwards.*
 
 Filter fixed code:
 
