@@ -9,7 +9,9 @@
 grep -i ".Txt" find-results.txt > grep-results-nocase.txt
 ```
 **Output** 
+
 ![grep-i1](grep-i1.png)
+
 *The output created a new file called "grep-results-nocase.txt" that contained all the files with .txt as the extention even though the command line had an error where the T was capitalized.*
 
 **Input**
@@ -17,7 +19,9 @@ grep -i ".Txt" find-results.txt > grep-results-nocase.txt
 grep -i "about_lsc" grep-results-nocase.txt > about-lsc.txt
 ```
 **Output**
+
 ![grep-i2](grep-i2.png)
+
 *Here, the files ending in .txt were parsed for containing the string "about_lsc" which has camel-capitalization in the file name but because we used -i it returned all the files that had About_LSC as well.*
 
 **Input**
@@ -25,7 +29,9 @@ grep -i "about_lsc" grep-results-nocase.txt > about-lsc.txt
 grep -i "AboUt_Lsc" grep-results-nocase.txt > about-lsc.txt
 ```
 **Output**
+
 ![grep-i3](grep-i3.png)
+
 *This test example was to see what would happen when some of the letters were correctly capitalized and some were incorrect. Clearly, the entire notion of capitalization is cancelled when using -i.*
 
 
@@ -63,7 +69,9 @@ grep -v "/" tech-files.txt > invert-grep2.txt
 grep -v "government" tech-files.txt > invert-grep3.txt
 ```
 **Output**
+
 ![grep-v1](grep-v1.png)
+
 *This output contains all the files besides the government path. This grep command is very useful when trying to find "all but" some of the files. Instead of calling grep on multiple things or even things that are unknown, you can just eliminate some of the file types.*
 
 
